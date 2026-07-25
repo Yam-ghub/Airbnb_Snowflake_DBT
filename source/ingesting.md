@@ -44,4 +44,5 @@ CREATE OR REPLACE TABLE BOOKINGS (
 );
 ```
 -- COPYING INTO using SNOWFLAKE UI since I don't have S3 subscription to store it.
-<img width="300" height="400" alt="image" src="https://github.com/Yam-ghub/Airbnb_Snowflake_DBT/blob/main/images/load_table_to_ddl.jpg" />
+
+<img width="500" height="500" alt="image" src="https://github.com/Yam-ghub/Airbnb_Snowflake_DBT/blob/main/images/load_table_to_ddl.jpg" />
