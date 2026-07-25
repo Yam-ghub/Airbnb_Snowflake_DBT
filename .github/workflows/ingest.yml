@@ -20,3 +20,12 @@ jobs:
 
       - name: Verify installation
         run: snowsql -v
+
+      - name: Test Snowflake Connection
+        env:
+          SNOWSQL_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+          SNOWSQL_USER: ${{ secrets.SNOWFLAKE_USER }}
+          SNOWSQL_PWD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+
+        run: |
+          snowsql -q "SELECT CURRENT_VERSION();"
