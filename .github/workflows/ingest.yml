@@ -13,6 +13,3 @@ jobs:
 
       - name: Hello
         run: echo "GitHub Actions is working!"
-
-        run: |
-          snowsql -q "SELECT CURRENT_VERSION();"
